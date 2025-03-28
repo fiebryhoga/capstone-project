@@ -2,15 +2,12 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
+  "/assets/images/main/hero/hero2.png",
+  "/assets/images/main/hero/hero3.png",
+  "/assets/images/main/hero/hero4.png",
   "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
-  "/assets/images/main/hero/hero5.png",
+  "/assets/images/main/hero/hero6.png",
+  "/assets/images/main/hero/hero7.png",
 ];
 
 const Hero = () => {
