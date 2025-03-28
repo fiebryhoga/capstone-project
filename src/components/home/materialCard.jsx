@@ -1,215 +1,83 @@
 import React from "react";
 
+const materials = [
+  {
+    image: "/assets/images/main/material/material5.png",
+    materialName: "Struktur Data",
+    description:
+      "Memahami cara menyusun dan mengelola data untuk efisiensi algoritma.",
+    href: "/materials/struktur-data",
+  },
+  {
+    image: "/assets/images/main/material/material2.png",
+    materialName: "Algoritma dan Pemrograman",
+    description:
+      "Mengenal konsep dasar algoritma serta penerapannya dalam pemrograman.",
+    href: "/materials/algoritma-pemrograman",
+  },
+  {
+    image: "/assets/images/main/material/material3.png",
+    materialName: "Basis Data",
+    description:
+      "Dasar-dasar pengelolaan database untuk menyimpan dan mengakses data secara optimal.",
+    href: "/materials/basis-data",
+  },
+  {
+    image: "/assets/images/main/material/material4.png",
+    materialName: "Jaringan Komputer",
+    description:
+      "Memahami konsep komunikasi antar komputer dan sistem jaringan.",
+    href: "/materials/jaringan-komputer",
+  },
+  {
+    image: "/assets/images/main/material/material6.png",
+    materialName: "Jaringan Komputer",
+    description:
+      "Memahami konsep komunikasi antar komputer dan sistem jaringan.",
+    href: "/materials/jaringan-komputer",
+  },
+  {
+    image: "/assets/images/main/material/material7.png",
+    materialName: "Jaringan Komputer",
+    description:
+      "Memahami konsep komunikasi antar komputer dan sistem jaringan.",
+    href: "/materials/jaringan-komputer",
+  },
+];
+
 const MaterialCard = () => {
   return (
-    <div className="w-full grid grid-cols-3 justify-center items-center gap-10">
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab1.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-96 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {materials.map((material, index) => (
+        <div
+          key={index}
+          className="w-full flex flex-col h-auto border border-blue-950 justify-start rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+        >
+          <div className="w-full bg-black h-64 rounded-t-lg">
+            <img
+              className="w-full h-full object-cover rounded-t-lg"
+              src={material.image}
+              alt={material.materialName}
+            />
+          </div>
+          <div className="w-full bg-blue-950 px-4 py-2 h-36 rounded-b-lg">
+            <h3 className="text-yellow-500 font-semibold text-lg">
+              {material.materialName}
+            </h3>
+            <p className="text-xs font-medium text-justify text-white line-clamp-3 mt-2">
+              {material.description}
+            </p>
+            <div className="w-full flex justify-end my-2">
+              <a
+                className="border border-white text-white text-sm font-semibold px-4 py-1 rounded-lg hover:bg-white hover:text-blue-950 transition-all duration-200"
+                href={material.href}
+              >
                 Open
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab2.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab3.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab4.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-96 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab5.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab6.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab7.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab8.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="relative group cursor-pointer group overflow-hidden text-gray-50 h-72 w-full  rounded-lg hover:duration-700 duration-700">
-        <div class="w-full h-full bg-lime-400 text-gray-800 shadow-2xl">
-          <img
-            className="object-cover w-full h-full"
-            src="/assets/images/main/material/bab9.jpg"
-            alt=""
-          />
-        </div>
-        <div class="absolute bg-white/50 backdrop-blur-xs backdrop:blur-lg -bottom-44 w-full p-3 flex flex-col group-hover:-bottom-0 group-hover:duration-600 duration-500">
-          <p class="text-blue-950 text-xs font-semibold mt-4 text-justify">
-            Bab ini membahas konsep dasar informatika, termasuk pengertian dan
-            pentingnya dalam kehidupan modern. Informatika tidak hanya berkaitan
-            dengan teknologi, tetapi juga dengan cara berpikir komputasional,
-            pemecahan masalah, dan keterampilan generik yang mendukung berbagai
-            bidang.
-          </p>
-          <div className="w-full justify-end items-center flex flex-row">
-            <a href="" className="px-4 py-1 hover:border-white hover:border rounded-lg border border-transparent text-black hover:text-white font-medium font-xs">
-                Open
-            </a>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

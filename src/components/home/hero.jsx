@@ -28,7 +28,7 @@ const Hero = () => {
 
   // Auto slide setiap 3 detik
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
+    const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -44,7 +44,7 @@ const Hero = () => {
           initial={{ x: direction * 100 + "%" }} // Next (100%) -> Prev (-100%)
           animate={{ x: 0 }} // Masuk ke tengah
           exit={{ x: direction * -100 + "%" }} // Keluar ke kiri jika Next (-100%), ke kanan jika Prev (100%)
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 1, ease: "easeInOut" }}
           draggable={false}
         />
       </AnimatePresence>
