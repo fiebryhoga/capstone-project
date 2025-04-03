@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
@@ -13,52 +13,66 @@ const images = [
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1); // 1 = Next, -1 = Prev
+  const intervalRef = useRef(null);
 
   // Fungsi untuk berpindah ke slide berikutnya (NEXT)
   const nextSlide = () => {
-    setDirection(1); // Geser dari kanan ke kiri
+    setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
   // Fungsi untuk berpindah ke slide sebelumnya (PREV)
   const prevSlide = () => {
-    setDirection(-1); // Geser dari kiri ke kanan (searah Next)
+    setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  // Auto slide setiap 3 detik
+  // Auto-slide setiap 5 detik
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
+    intervalRef.current = setInterval(nextSlide, 5000);
+    return () => clearInterval(intervalRef.current);
   }, []);
+
+  // Hentikan auto-slide saat tombol ditekan
+  const handleUserInteraction = () => {
+    clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(nextSlide, 5000);
+  };
 
   return (
     <div className="relative w-full h-[400px] overflow-hidden rounded-lg shadow-lg">
-      {/* Animasi Pergeseran */}
-      <AnimatePresence>
-        <motion.img
-          key={currentIndex}
-          src={images[currentIndex]}
-          alt="Hero"
-          className="absolute w-full h-full object-cover"
-          initial={{ x: direction * 100 + "%" }} // Next (100%) -> Prev (-100%)
-          animate={{ x: 0 }} // Masuk ke tengah
-          exit={{ x: direction * -100 + "%" }} // Keluar ke kiri jika Next (-100%), ke kanan jika Prev (100%)
-          transition={{ duration: 1, ease: "easeInOut" }}
-          draggable={false}
-        />
-      </AnimatePresence>
+      <div className="relative w-full h-full">
+        <AnimatePresence initial={false} custom={direction}>
+          <motion.img
+            key={currentIndex}
+            src={images[currentIndex]}
+            alt="Hero"
+            className="absolute w-full h-full object-cover"
+            initial={{ x: direction === 1 ? "100%" : "-100%", opacity: 1 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: direction === 1 ? "-100%" : "100%", opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+            draggable={false}
+          />
+        </AnimatePresence>
+      </div>
 
       {/* Tombol Prev & Next */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-transparent hover:bg-white hover:opacity-20 opacity-40 bg-opacity-50 text-white hover:text-black p-2 rounded-full"
-        onClick={prevSlide}
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white hover:opacity-50 opacity-40 text-white hover:text-black p-2 rounded-full"
+        onClick={() => {
+          prevSlide();
+          handleUserInteraction();
+        }}
       >
         ❮
       </button>
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-transparent hover:bg-white hover:opacity-20 opacity-40 bg-opacity-50 text-white hover:text-black p-2 rounded-full"
-        onClick={nextSlide}
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white hover:opacity-50 opacity-40 text-white hover:text-black p-2 rounded-full"
+        onClick={() => {
+          nextSlide();
+          handleUserInteraction();
+        }}
       >
         ❯
       </button>
