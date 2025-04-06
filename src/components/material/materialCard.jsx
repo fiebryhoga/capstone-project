@@ -33,7 +33,7 @@ const MaterialCard = memo(({ image, materialName, description, href }) => {
         </div>
 
         <div className="z-10 px-4 pb-3 w-full flex justify-end mt-2">
-          <Link href="/material/content" passHref>
+          <Link href={href} passHref>
             <button className="z-10 border border-blue-950 text-blue-950 text-sm font-semibold px-4 py-1 rounded-lg hover:bg-blue-950 hover:text-white transition-all duration-200 cursor-pointer">
               Open
             </button>

@@ -1,6 +1,9 @@
+/** @type {import('postcss').Config} */
 const config = {
-  plugins: ["@tailwindcss/postcss"],
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: {
+    "@tailwindcss/postcss": {},
+    autoprefixer: {},
+  },
 };
 
 export default config;

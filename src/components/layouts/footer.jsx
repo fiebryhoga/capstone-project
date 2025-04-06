@@ -85,8 +85,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="z-10 bottom-0 h-12 bg-yellow-600 w-full">
-        <p className="text-center text-blue-950 text-sm pt-2">
+      <div className="z-10 bottom-0 h-12 bg-blue-950 w-full">
+        <p className="text-center text-white text-sm pt-2">
           © 2025 Tim Capstone Project PTI FILKOM UB. Semua Hak Dilindungi.
         </p>
       </div>
