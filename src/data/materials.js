@@ -33,10 +33,10 @@ const materials = [
   },
   {
     id: 5,
-    image: "/assets/images/main/material/jaringan-komputer.png",
+    image: "/assets/images/main/material/informatika-generik1.png",
     materialName: "Informatika dan Keterampilan Generik",
     description:
-      "Pelajari dasar-dasar jaringan komputer, termasuk arsitektur, protokol, dan cara komputer berkomunikasi melalui internet. Materi ini juga membahas keamanan jaringan dan manajemen data.",
+      "Bab ini membahas dasar-dasar pemahaman tentang mata pelajaran Informatika di jenjang SMA serta keterampilan generik yang relevan dengan perkembangan dunia digital. Informatika bukan sekadar pembelajaran teknologi, tetapi juga membentuk cara berpikir kritis, logis, dan kreatif melalui pendekatan komputasional",
     href: "/informatikaGenerik",
   },
   {
@@ -46,6 +46,14 @@ const materials = [
     description:
       "Kembangkan kemampuan berpikir logis dan sistematis dalam memecahkan masalah menggunakan pendekatan komputasional. Materi ini sangat penting dalam pengembangan solusi berbasis teknologi.",
     href: "/berpikirKomputasional",
+  },
+  {
+    id: 7,
+    image: "/assets/images/main/material/material2.png",
+    materialName: "Algoritma dan Pemrograman",
+    description:
+      "Pahami konsep dasar algoritma serta cara menerapkannya dalam berbagai bahasa pemrograman. Materi ini membantu dalam menyusun logika pemrograman yang efisien dan optimal.",
+    href: "/algoritmaPemrograman",
   },
   // {
   //   id: 6,

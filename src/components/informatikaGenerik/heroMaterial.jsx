@@ -3,7 +3,7 @@ import React from 'react'
 const HeroMaterial = () => {
   return (
     <div className="w-full h-[300px]">
-      <img className='w-full h-full object-cover' src="/assets/images/main/material/analisis-data.png" alt="" />
+      <img className='w-full h-full object-cover' src="/assets/images/main/material/informatika-generik1.png" alt="" />
     </div>
   );
 }
