@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
 
-const SubPengertianSK = () => {
+const SubPengertianJK = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -16,46 +16,43 @@ const SubPengertianSK = () => {
           }`}
         />
         <h1 className="text-blue-950 font-semibold">
-          Sub Materi: Pengertian Sistem Komputer
+          Sub Materi: Pengertian Jaringan Komputer
         </h1>
       </div>
 
       {isOpen && (
         <div className="px-6 flex flex-col gap-6 text-sm text-blue-950 w-full py-4 border-t border-t-blue-950 space-y-4">
-          {/* Pengertian Sistem Komputer */}
           <div className="p-4 bg-blue-50 rounded-xl shadow">
             <h2 className="font-semibold text-blue-900 mb-2">
-              1. Pengertian Sistem Komputer
+              Pengertian Jaringan Komputer
             </h2>
             <p>
-              Sistem komputer adalah suatu kesatuan yang terdiri atas{" "}
-              <strong>perangkat keras (hardware)</strong>,{" "}
-              <strong>perangkat lunak (software)</strong>, dan{" "}
-              <strong>pengguna (brainware)</strong> yang bekerja secara
-              bersama-sama untuk melakukan pemrosesan data dan menghasilkan
-              informasi.
+              Jaringan komputer adalah sekumpulan dua atau lebih perangkat
+              komputer yang saling terhubung satu sama lain melalui media
+              komunikasi tertentu, seperti kabel, gelombang radio, atau koneksi
+              nirkabel lainnya. Tujuan utama dari jaringan ini adalah untuk
+              memungkinkan pertukaran data, berbagi sumber daya (seperti
+              printer, file, dan koneksi internet), serta memfasilitasi
+              komunikasi yang lebih cepat dan efisien antara perangkat yang
+              terhubung.
             </p>
             <p className="mt-2">
-              Ketiga komponen ini saling terintegrasi dan tidak dapat berjalan
-              sendiri-sendiri. Hardware sebagai alat fisik, software sebagai
-              instruksi atau program, dan brainware sebagai pengendali yang
-              mengoperasikan serta memanfaatkan hasil dari sistem tersebut.
-            </p>
-            <p className="mt-2">
-              Dengan sistem komputer, kita bisa melakukan berbagai pekerjaan
-              seperti mengetik, menghitung, mendesain, hingga bermain game
-              secara efisien dan cepat.
+              Dengan jaringan komputer, berbagai aktivitas seperti pengiriman
+              email, penyimpanan data terpusat, akses jarak jauh, dan kolaborasi
+              daring menjadi mungkin dilakukan tanpa harus berada di satu lokasi
+              fisik. Jaringan ini bisa sangat sederhana, seperti menghubungkan
+              dua komputer di rumah, hingga sangat kompleks seperti jaringan
+              perusahaan besar atau bahkan internet global.
             </p>
           </div>
 
-          {/* Video Penjelasan */}
           <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
             <h3 className="font-semibold text-blue-900 mb-2">
-              Penjelasan Video: Apa itu Sistem Komputer?
+              Penjelasan Video: Apa itu Jaringan Komputer?
             </h3>
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/D05xaBfL9sw"
+                src="https://www.youtube.com/embed/GHPMTljp3ZY"
                 title="Pengertian Sistem Komputer"
                 width="100%"
                 height="100%"
@@ -70,4 +67,4 @@ const SubPengertianSK = () => {
   );
 };
 
-export default SubPengertianSK;
+export default SubPengertianJK;

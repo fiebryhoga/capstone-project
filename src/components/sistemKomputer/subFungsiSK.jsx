@@ -22,109 +22,109 @@ const SubFungsiSK = () => {
 
       {isOpen && (
         <div className="px-6 flex flex-col gap-6 text-sm text-blue-950 w-full py-4 border-t border-t-blue-950 space-y-4">
-          <p>
-            <span className="font-semibold">Sistem komputer</span> berfungsi
-            sebagai alat untuk mengolah informasi dan data. Terdapat empat
-            fungsi utama dalam sistem komputer yang saling terintegrasi dan
-            berurutan:
-          </p>
-
-          {/* 1. Input */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">1. Input (Masukan)</h2>
-            <p>
-              Fungsi input bertugas untuk menerima data dari luar sistem, yaitu
-              dari pengguna. Perangkat input memungkinkan pengguna untuk
-              berinteraksi dengan komputer.
-            </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>Keyboard (untuk mengetik data)</li>
-              <li>Mouse (untuk navigasi dan kontrol)</li>
-              <li>
-                Scanner (untuk membaca dokumen fisik ke dalam format digital)
-              </li>
-            </ul>
-            <img
-              src="assets/images/content/sistemKomputer/input.jpeg"
-              alt="Perangkat Input"
-              className="w-80 mt-4"
-            />
-          </div>
-
-          {/* 2. Processing */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              2. Processing (Pemrosesan)
+          {/* Pendahuluan */}
+          <div className="p-4 bg-blue-50 rounded-xl shadow">
+            <h2 className="font-semibold text-blue-900 mb-2">
+              3. Fungsi Sistem Komputer
             </h2>
             <p>
-              Proses ini dilakukan oleh{" "}
-              <span className="font-semibold">
-                CPU (Central Processing Unit)
-              </span>
-              . CPU berperan sebagai otak komputer yang menjalankan instruksi,
-              melakukan perhitungan, dan mengontrol alur data.
+              Sistem komputer tidak hanya sekadar alat elektronik biasa,
+              melainkan sebuah sistem terpadu yang menjalankan berbagai fungsi
+              penting dalam pengolahan data. Secara umum, sistem komputer
+              memiliki empat fungsi utama:
             </p>
-            <img
-              src="assets/images/content/sistemKomputer/proses.jpg"
-              alt="Perangkat Input"
-              className="w-80 mt-4"
-            />
           </div>
 
-          {/* 3. Storage */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              3. Storage (Penyimpanan)
-            </h2>
+          {/* Fungsi Input */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">1️⃣ Input</h3>
             <p>
-              Penyimpanan digunakan untuk menyimpan data dan hasil pemrosesan,
-              baik untuk sementara maupun permanen.
+              Fungsi ini bertugas untuk menerima data atau perintah dari
+              pengguna melalui perangkat input. Perangkat yang termasuk dalam
+              fungsi ini antara lain:
             </p>
-            <ul className="list-disc list-inside mt-2">
+            <ul className="list-disc list-inside mt-2 ml-2">
               <li>
-                <span className="font-medium">RAM</span>: Penyimpanan sementara
-                saat proses berjalan
+                <strong>Keyboard</strong> – untuk mengetikkan data atau
+                perintah.
               </li>
               <li>
-                <span className="font-medium">Harddisk/SSD</span>: Penyimpanan
-                permanen data dan file
+                <strong>Mouse</strong> – untuk navigasi dan interaksi visual.
+              </li>
+              <li>
+                <strong>Scanner</strong> – untuk mengubah dokumen fisik menjadi
+                digital.
+              </li>
+              <li>
+                <strong>Microphone</strong> – untuk input suara.
               </li>
             </ul>
-            <img
-              src="assets/images/content/sistemKomputer/storage.jpeg"
-              alt="Perangkat Input"
-              className="w-80 mt-4"
-            />
           </div>
 
-          {/* 4. Output */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              4. Output (Keluaran)
-            </h2>
+          {/* Fungsi Processing */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              2️⃣ Processing (Pemrosesan)
+            </h3>
             <p>
-              Output adalah hasil dari proses yang ditampilkan kepada pengguna.
-              Perangkat output menampilkan atau mencetak informasi.
+              Fungsi pemrosesan dilakukan oleh{" "}
+              <strong>CPU (Central Processing Unit)</strong>, yang merupakan
+              otak dari komputer. CPU akan mengolah data yang masuk berdasarkan
+              instruksi dari software agar menjadi informasi yang berguna.
+              Pemrosesan ini bisa mencakup perhitungan, logika, pengurutan data,
+              dan lainnya.
             </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>Monitor (menampilkan visual)</li>
-              <li>Printer (mencetak dokumen)</li>
-              <li>Speaker (menghasilkan suara)</li>
-            </ul>
-            <img
-              src="assets/images/content/sistemKomputer/output.jpg"
-              alt="Perangkat Input"
-              className="w-80 mt-4"
-            />
           </div>
 
-          {/* Kesimpulan */}
-          <div className="p-4 bg-green-100 border-l-4 border-green-500 text-green-800 rounded shadow-sm">
-            📌 <span className="font-semibold">Kesimpulan:</span> Fungsi sistem
-            komputer dimulai dari menerima data (input), memprosesnya
-            (processing), menyimpannya (storage), dan menampilkan hasilnya
-            (output). Semua fungsi ini saling terhubung dan membentuk satu
-            kesatuan proses kerja komputer.
+          {/* Fungsi Storage */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              3️⃣ Storage (Penyimpanan)
+            </h3>
+            <p>
+              Fungsi ini berkaitan dengan penyimpanan data, baik secara
+              sementara maupun permanen:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>
+                <strong>RAM (Random Access Memory)</strong> – menyimpan data
+                sementara saat komputer bekerja.
+              </li>
+              <li>
+                <strong>Harddisk / SSD</strong> – menyimpan data dan program
+                secara permanen.
+              </li>
+              <li>
+                <strong>Cloud Storage</strong> – penyimpanan data secara online
+                (Google Drive, Dropbox, dll).
+              </li>
+            </ul>
+          </div>
+
+          {/* Fungsi Output */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">4️⃣ Output</h3>
+            <p>
+              Setelah data diproses, hasilnya disampaikan kepada pengguna
+              melalui perangkat output, seperti:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>
+                <strong>Monitor</strong> – menampilkan hasil dalam bentuk
+                visual.
+              </li>
+              <li>
+                <strong>Printer</strong> – mencetak hasil kerja dalam bentuk
+                fisik.
+              </li>
+              <li>
+                <strong>Speaker</strong> – menyampaikan output suara.
+              </li>
+              <li>
+                <strong>Proyektor</strong> – menampilkan output ke layar besar
+                untuk presentasi.
+              </li>
+            </ul>
           </div>
         </div>
       )}

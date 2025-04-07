@@ -19,8 +19,33 @@ const materials = [
     id: 3,
     image: "/assets/images/main/material/dampak-sosial.png",
     materialName: "Dampak Sosial Informatika",
-    description: "Dampak Sosial Informatika merujuk pada pengaruh yang ditimbulkan oleh perkembangan teknologi informasi dan komunikasi terhadap kehidupan masyarakat. Informatika telah mengubah cara manusia berinteraksi, bekerja, belajar, dan mengakses informasi. Di satu sisi, teknologi ini memberikan banyak manfaat seperti kemudahan komunikasi global, akses cepat terhadap informasi, efisiensi dalam pekerjaan, serta lahirnya berbagai peluang ekonomi digital. Namun di sisi lain, penggunaan informatika juga membawa dampak negatif seperti ketergantungan pada teknologi, penyebaran hoaks, pelanggaran privasi, dan kesenjangan digital antar kelompok masyarakat. Oleh karena itu, pemahaman terhadap dampak sosial informatika sangat penting agar teknologi dapat dimanfaatkan secara bijak dan bertanggung jawab dalam kehidupan sehari-hari.",
+    description:
+      "Dampak Sosial Informatika merujuk pada pengaruh yang ditimbulkan oleh perkembangan teknologi informasi dan komunikasi terhadap kehidupan masyarakat. Informatika telah mengubah cara manusia berinteraksi, bekerja, belajar, dan mengakses informasi. Di satu sisi, teknologi ini memberikan banyak manfaat seperti kemudahan komunikasi global, akses cepat terhadap informasi, efisiensi dalam pekerjaan, serta lahirnya berbagai peluang ekonomi digital. Namun di sisi lain, penggunaan informatika juga membawa dampak negatif seperti ketergantungan pada teknologi, penyebaran hoaks, pelanggaran privasi, dan kesenjangan digital antar kelompok masyarakat. Oleh karena itu, pemahaman terhadap dampak sosial informatika sangat penting agar teknologi dapat dimanfaatkan secara bijak dan bertanggung jawab dalam kehidupan sehari-hari.",
     href: "/dampakSosial",
+  },
+  {
+    id: 4,
+    image: "/assets/images/main/material/jaringan-komputer.png",
+    materialName: "Jaringan Komputer dan Internet",
+    description:
+      "Pelajari dasar-dasar jaringan komputer, termasuk arsitektur, protokol, dan cara komputer berkomunikasi melalui internet. Materi ini juga membahas keamanan jaringan dan manajemen data.",
+    href: "/jaringanKomputer",
+  },
+  {
+    id: 5,
+    image: "/assets/images/main/material/jaringan-komputer.png",
+    materialName: "Informatika dan Keterampilan Generik",
+    description:
+      "Pelajari dasar-dasar jaringan komputer, termasuk arsitektur, protokol, dan cara komputer berkomunikasi melalui internet. Materi ini juga membahas keamanan jaringan dan manajemen data.",
+    href: "/informatikaGenerik",
+  },
+  {
+    id: 6,
+    image: "/assets/images/main/material/material7.png",
+    materialName: "Berpikir Komputasional",
+    description:
+      "Kembangkan kemampuan berpikir logis dan sistematis dalam memecahkan masalah menggunakan pendekatan komputasional. Materi ini sangat penting dalam pengembangan solusi berbasis teknologi.",
+    href: "/berpikirKomputasional",
   },
   // {
   //   id: 6,
@@ -45,14 +70,6 @@ const materials = [
   //   description:
   //     "Pelajari dasar-dasar jaringan komputer, termasuk arsitektur, protokol, dan cara komputer berkomunikasi melalui internet. Materi ini juga membahas keamanan jaringan dan manajemen data.",
   //   href: "/jaringanKomputer",
-  // },
-  // {
-  //   id: 5,
-  //   image: "/assets/images/main/material/material7.png",
-  //   materialName: "Berpikir Komputasional",
-  //   description:
-  //     "Kembangkan kemampuan berpikir logis dan sistematis dalam memecahkan masalah menggunakan pendekatan komputasional. Materi ini sangat penting dalam pengembangan solusi berbasis teknologi.",
-  //   href: "/berpikirKomputasional",
   // },
 ];
 

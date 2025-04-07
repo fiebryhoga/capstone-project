@@ -1,33 +1,33 @@
-import React from 'react'
+import React from "react";
 
 const Aside = () => {
   return (
     <div className="min-h-64 w-2/10 flex flex-col gap-8">
       <div className="w-full border border-blue-950 rounded-lg flex flex-col justify-center items-start py-2">
         <h1 className="text-base text-center font-semibold pb-1 border-b border-b-blue-950 w-full mb-4">
-          Sistem Komputer
+          Informatika dan Keterampilan Generik
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pengertian Sistem Komputer
+            Pengantar Informatika di SMA
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Komponen Sistem Komputer
+            Informatika di Era Digital
+          </a>
+          <a
+            href=""
+            className="w-full py-1 px-2 hover:bg-gray-100"
+          >
+            Kompetensi Generik dalam Informatika
+          </a>
+          <a
+            href=""
+            className="w-full py-1 px-2 hover:bg-gray-100"
+          >
+            Struktur Materi Informatika
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Fungsi Sistem Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Klasifikasi Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Interaksi Antar Komponen Sistem Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Contoh Implementasi Sistem Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Latihan
+            Perbedaan Informatika di SMA dan SMP
           </a>
         </div>
       </div>
@@ -37,27 +37,18 @@ const Aside = () => {
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Referensi A
+            Buku Informatika Kemdikbud
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Referensi B
+            Modul Informatika SMA
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Referensi C
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Referensi D
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Referensi E
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Referensi F
+            Sumber Daring Lainnya
           </a>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Aside;

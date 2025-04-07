@@ -5,27 +5,28 @@ const Aside = () => {
     <div className="min-h-64 w-2/10 flex flex-col gap-8">
       <div className="w-full border border-blue-950 rounded-lg flex flex-col justify-center items-start py-2">
         <h1 className="text-base text-center font-semibold pb-1 border-b border-b-blue-950 w-full mb-4">
-          Sistem Komputer
+          Jaringan Komputer
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pengertian Sistem Komputer
+            Pengertian Jaringan Komputer
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Komponen Sistem Komputer
+            Manfaat Jaringan Komputer
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Fungsi Sistem Komputer
+            Jenis-jenis Jaringan Komputer
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Klasifikasi Komputer
+            Topologi Jaringan
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Interaksi Antar Komponen Sistem Komputer
+            Perangkat Jaringan Komputer
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Contoh Implementasi Sistem Komputer
+            Konektivitas Internet
           </a>
+
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Latihan
           </a>

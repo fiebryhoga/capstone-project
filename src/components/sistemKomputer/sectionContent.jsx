@@ -3,7 +3,9 @@ import SubPengertianSK from "./subPengertianSK";
 import SubKomponenSK from "./subKomponenSK";
 import SubFungsiSK from "./subFungsiSK";
 import SubKlasifikasiSK from "./subKlasifikasiSK";
-import SubLatihan from "./subLatihan";
+import SubInteraksiSK from "./subInteraksiSK";
+import SubImplementasiSK from "./subImplementasiSK";
+import SubLatihanSK from "./subLatihanSK";
 
 const SectionContent = () => {
 
@@ -32,8 +34,10 @@ const SectionContent = () => {
       <SubPengertianSK />
       <SubKomponenSK />
       <SubFungsiSK />
-      <SubKlasifikasiSK />
-      <SubLatihan />
+      <SubKlasifikasiSK/>
+      <SubInteraksiSK/>
+      <SubImplementasiSK/>
+      <SubLatihanSK />
     </div>
   );
 };

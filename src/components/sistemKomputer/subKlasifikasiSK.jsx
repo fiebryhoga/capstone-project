@@ -22,168 +22,85 @@ const SubKlasifikasiSK = () => {
 
       {isOpen && (
         <div className="px-6 flex flex-col gap-6 text-sm text-blue-950 w-full py-4 border-t border-t-blue-950 space-y-4">
-          <p>
-            Komputer dapat diklasifikasikan berdasarkan{" "}
-            <span className="font-semibold">
-              ukuran, kemampuan, dan penggunaannya
-            </span>
-            . Berikut ini adalah klasifikasi komputer berdasarkan ukurannya:
-          </p>
-
-          {/* Tabel Klasifikasi Komputer */}
-          <div className="overflow-x-auto">
-            <table className="table-auto w-full border border-blue-950 text-sm">
-              <thead>
-                <tr className="bg-blue-100 text-blue-950">
-                  <th className="border border-blue-950 px-2 py-2">
-                    Jenis Komputer
-                  </th>
-                  <th className="border border-blue-950 px-2 py-2">
-                    Deskripsi
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-blue-950 px-2 py-2 font-medium">
-                    Supercomputer
-                  </td>
-                  <td className="border border-blue-950 px-2 py-2">
-                    Digunakan untuk perhitungan kompleks berskala besar, seperti
-                    prediksi cuaca, riset nuklir, dan simulasi ruang angkasa.
-                  </td>
-                </tr>
-                <tr className="bg-blue-50">
-                  <td className="border border-blue-950 px-2 py-2 font-medium">
-                    Mainframe
-                  </td>
-                  <td className="border border-blue-950 px-2 py-2">
-                    Komputer besar yang digunakan oleh perusahaan atau lembaga
-                    besar untuk memproses dan menyimpan data dalam jumlah sangat
-                    besar.
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border border-blue-950 px-2 py-2 font-medium">
-                    Minikomputer
-                  </td>
-                  <td className="border border-blue-950 px-2 py-2">
-                    Lebih kecil dari mainframe, biasanya digunakan oleh
-                    organisasi skala menengah, misalnya rumah sakit atau
-                    universitas.
-                  </td>
-                </tr>
-                <tr className="bg-blue-50">
-                  <td className="border border-blue-950 px-2 py-2 font-medium">
-                    Mikrokomputer
-                  </td>
-                  <td className="border border-blue-950 px-2 py-2">
-                    Komputer pribadi seperti PC dan laptop, umum digunakan oleh
-                    individu.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          {/* Pendahuluan */}
+          <div className="p-4 bg-blue-50 rounded-xl shadow">
+            <h2 className="font-semibold text-blue-900 mb-2">
+              4. Klasifikasi Komputer
+            </h2>
+            <p>
+              Komputer dapat diklasifikasikan berdasarkan berbagai aspek, salah
+              satunya adalah dari segi ukuran dan kemampuan pemrosesan. Berikut
+              adalah jenis-jenis komputer berdasarkan ukurannya:
+            </p>
           </div>
 
-          {/* Penjelasan Kerja Komponen */}
-          <div className="p-4 bg-blue-50 border-l-4 border-blue-500 text-blue-800 rounded shadow-sm">
-            🔄{" "}
-            <span className="font-semibold">
-              Ketiga komponen sistem komputer (Hardware, Software, Brainware)
-            </span>{" "}
-            bekerja secara sinergis:
-            <ul className="list-disc list-inside mt-2">
-              <li>Hardware menjalankan instruksi dari software.</li>
-              <li>Software memberikan perintah untuk memproses data.</li>
+          {/* Supercomputer */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              🧠 Supercomputer
+            </h3>
+            <p>
+              Supercomputer adalah komputer dengan kapasitas pemrosesan
+              tertinggi di dunia. Biasanya digunakan untuk:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>Simulasi iklim dan cuaca global</li>
+              <li>Penelitian nuklir dan luar angkasa</li>
+              <li>Kecerdasan buatan dan analisis data skala besar</li>
+            </ul>
+          </div>
+
+          {/* Mainframe */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">🏢 Mainframe</h3>
+            <p>
+              Komputer jenis ini digunakan oleh perusahaan besar dan lembaga
+              pemerintahan untuk memproses dan mengelola data dalam jumlah besar
+              secara bersamaan. Ciri khasnya:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
               <li>
-                Brainware mengoperasikan dan mengelola komputer, serta
-                menggunakan informasi hasil pemrosesan.
+                Stabil dan mampu menangani ribuan pengguna secara bersamaan
+              </li>
+              <li>
+                Digunakan untuk sistem perbankan, asuransi, dan sensus penduduk
               </li>
             </ul>
           </div>
 
-          {/* Tabel Aktivitas */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              💡 Contoh Aktivitas dan Komponennya:
-            </h2>
-            <div className="overflow-x-auto">
-              <table className="table-auto w-full border border-blue-950 text-sm">
-                <thead>
-                  <tr className="bg-blue-100 text-blue-950">
-                    <th className="border border-blue-950 px-2 py-2">
-                      Aktivitas
-                    </th>
-                    <th className="border border-blue-950 px-2 py-2">
-                      Hardware
-                    </th>
-                    <th className="border border-blue-950 px-2 py-2">
-                      Software
-                    </th>
-                    <th className="border border-blue-950 px-2 py-2">
-                      Brainware
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Mengetik Dokumen
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Laptop, Keyboard
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Microsoft Word
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Mahasiswa
-                    </td>
-                  </tr>
-                  <tr className="bg-blue-50">
-                    <td className="border border-blue-950 px-2 py-2">
-                      Mengedit Video
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      PC, Mouse
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Adobe Premiere
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Editor Video
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Menyusun Laporan Keuangan
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Laptop, Printer
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Excel, PDF Reader
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Staf Keuangan
-                    </td>
-                  </tr>
-                  <tr className="bg-blue-50">
-                    <td className="border border-blue-950 px-2 py-2">
-                      Bermain Game
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      PC, Monitor
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">
-                      Steam, Game Engine
-                    </td>
-                    <td className="border border-blue-950 px-2 py-2">Gamer</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          {/* Minikomputer */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              🏫 Minikomputer
+            </h3>
+            <p>
+              Lebih kecil dari mainframe namun tetap cukup kuat untuk digunakan
+              oleh organisasi skala menengah. Minikomputer digunakan dalam:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>Sistem akuntansi perusahaan menengah</li>
+              <li>Pengelolaan data instansi pemerintah daerah</li>
+            </ul>
+          </div>
+
+          {/* Mikrokomputer */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              💻 Mikrokomputer
+            </h3>
+            <p>
+              Ini adalah komputer yang paling umum digunakan, biasa dikenal
+              sebagai komputer pribadi (PC). Jenis ini mencakup:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>Laptop</li>
+              <li>Desktop</li>
+              <li>Tablet</li>
+            </ul>
+            <p className="mt-2">
+              Digunakan untuk keperluan sehari-hari seperti bekerja, belajar,
+              hiburan, dan berkomunikasi.
+            </p>
           </div>
         </div>
       )}

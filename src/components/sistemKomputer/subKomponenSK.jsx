@@ -22,96 +22,97 @@ const SubKomponenSK = () => {
 
       {isOpen && (
         <div className="px-6 flex flex-col gap-6 text-sm text-blue-950 w-full py-4 border-t border-t-blue-950 space-y-4">
-          <p>
-            <span className="font-semibold">Sistem Komputer</span> terdiri dari
-            tiga komponen utama yang saling terintegrasi dan bekerja sama untuk
-            menjalankan fungsinya, yaitu:
-          </p>
-
-          {/* 1. Hardware */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              1. Hardware (Perangkat Keras)
+          {/* Komponen Sistem Komputer */}
+          <div className="p-4 bg-blue-50 rounded-xl shadow">
+            <h2 className="font-semibold text-blue-900 mb-2">
+              2. Komponen Sistem Komputer
             </h2>
             <p>
-              Merupakan komponen fisik dari komputer yang bisa dilihat dan
-              disentuh secara langsung. Beberapa contoh umum hardware antara
-              lain:
+              Sistem komputer terdiri dari tiga komponen utama yang saling
+              mendukung satu sama lain dalam menjalankan fungsi pemrosesan data.
+              Ketiga komponen tersebut adalah:
             </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>CPU (Central Processing Unit)</li>
-              <li>RAM (Random Access Memory)</li>
-              <li>Harddisk / SSD</li>
-              <li>Monitor</li>
-              <li>Keyboard dan Mouse</li>
-            </ul>
-            <img
-              src="/assets/images/content/sistemKomputer/hardwaresistemkomputer.jpg"
-              alt="Contoh Perangkat Keras"
-              className="w-full md:w-1/2 mt-4 border rounded shadow-md"
-            />
           </div>
 
-          {/* 2. Software */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              2. Software (Perangkat Lunak)
-            </h2>
+          {/* Hardware */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              🔧 Hardware (Perangkat Keras)
+            </h3>
             <p>
-              Software adalah program atau instruksi yang dijalankan oleh
-              perangkat keras. Tanpa software, hardware tidak dapat melakukan
-              tugas apapun. Software dibagi menjadi:
+              Merupakan komponen fisik dari komputer yang dapat dilihat dan
+              disentuh. Contohnya meliputi:
             </p>
-            <ul className="list-disc list-inside mt-2">
+            <ul className="list-disc list-inside mt-2 ml-2">
               <li>
-                <span className="font-medium">Sistem Operasi</span>: Windows,
-                Linux, macOS
+                <strong>CPU (Central Processing Unit)</strong> – otak dari
+                komputer.
               </li>
               <li>
-                <span className="font-medium">Aplikasi</span>: Microsoft Word,
-                Google Chrome
+                <strong>RAM (Random Access Memory)</strong> – memori sementara
+                saat program dijalankan.
               </li>
               <li>
-                <span className="font-medium">
-                  Bahasa Pemrograman & Compiler
-                </span>
-                : Python, Java, C++, GCC
+                <strong>Harddisk / SSD</strong> – tempat penyimpanan data dan
+                sistem operasi.
+              </li>
+              <li>
+                <strong>Monitor</strong> – menampilkan output visual.
+              </li>
+              <li>
+                <strong>Keyboard dan Mouse</strong> – alat input untuk
+                memberikan perintah.
               </li>
             </ul>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/2721/2721295.png"
-              alt="Ilustrasi Software"
-              className="w-20 mt-4"
-            />
           </div>
 
-          {/* 3. Brainware */}
-          <div>
-            <h2 className="font-semibold text-base mb-2">
-              3. Brainware (Pengguna)
-            </h2>
+          {/* Software */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              💻 Software (Perangkat Lunak)
+            </h3>
             <p>
-              Brainware adalah orang yang menggunakan dan mengoperasikan sistem
-              komputer. Perannya sangat penting karena tanpa pengguna, komputer
-              tidak akan berfungsi secara maksimal. Contoh brainware:
+              Adalah program dan instruksi yang dijalankan oleh perangkat keras.
+              Jenis-jenis software meliputi:
             </p>
-            <ul className="list-disc list-inside mt-2">
-              <li>Pengguna Akhir (End User)</li>
-              <li>Teknisi atau Administrator Sistem</li>
-              <li>Programmer atau Pengembang Aplikasi</li>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>
+                <strong>Sistem Operasi</strong> – seperti Windows, Linux, macOS.
+              </li>
+              <li>
+                <strong>Aplikasi</strong> – seperti Microsoft Word, Google
+                Chrome, dan game.
+              </li>
+              <li>
+                <strong>Bahasa Pemrograman & Compiler</strong> – alat bantu bagi
+                pengembang untuk membuat program.
+              </li>
             </ul>
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-              alt="Ilustrasi Pengguna Komputer"
-              className="w-20 mt-4"
-            />
           </div>
 
-          <div className="p-4 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 rounded shadow-sm">
-            🎓 <span className="font-semibold">Kesimpulan:</span> Ketiga
-            komponen ini saling mendukung. Tanpa hardware, tidak ada tempat
-            untuk menjalankan software. Tanpa software, hardware tidak dapat
-            digunakan. Tanpa brainware, keduanya tidak akan berguna.
+          {/* Brainware */}
+          <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
+            <h3 className="font-semibold text-blue-900 mb-2">
+              🧠 Brainware (Pengguna)
+            </h3>
+            <p>
+              Brainware adalah manusia yang menggunakan atau mengoperasikan
+              sistem komputer. Termasuk di dalamnya:
+            </p>
+            <ul className="list-disc list-inside mt-2 ml-2">
+              <li>
+                <strong>Pengguna Akhir</strong> – orang yang menggunakan
+                komputer untuk kebutuhan sehari-hari.
+              </li>
+              <li>
+                <strong>Teknisi</strong> – yang melakukan perawatan dan
+                perbaikan sistem.
+              </li>
+              <li>
+                <strong>Programmer / Developer</strong> – yang membuat aplikasi
+                dan sistem.
+              </li>
+            </ul>
           </div>
         </div>
       )}
