@@ -15,9 +15,7 @@ const SubPengantarIG = () => {
             isOpen ? "rotate-90" : ""
           }`}
         />
-        <h1 className="text-blue-950 font-semibold">
-          Sub Materi: Pengantar Informatika di SMA
-        </h1>
+        <h1 className="text-blue-950 font-semibold">Video Pembelajaran</h1>
       </div>
 
       {isOpen && (
@@ -75,7 +73,7 @@ const SubPengantarIG = () => {
             </h3>
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/KSwlcE7adx4"
+                src="https://drive.google.com/file/d/1KeuagdGUV2dUhuNlI_PALgRDGc6OXsc8/preview"
                 title="Pengantar Informatika di SMA"
                 width="100%"
                 height="100%"

@@ -1,5 +1,6 @@
 import React from "react";
 import SubPengantarIG from "./subPengantarIG";
+import SubLatihanIG from "./subLatihanIG";
 import SubEraIG from "./subEraIG";
 import SubGenerikIG from "./subGenerikIG";
 import SubStrukturIG from "./subStrukturIG";
@@ -33,11 +34,14 @@ const SectionContent = () => {
         Informatika di SMA dan jenjang sebelumnya, agar siswa dapat menyesuaikan
         diri dengan kedalaman dan keluasan materi yang lebih kompleks.
       </p>
-      <SubPengantarIG/>
+
+      <SubPengantarIG />
+      <SubLatihanIG />
+      {/* <SubPengantarIG/>
       <SubEraIG/>
       <SubGenerikIG/>
       <SubStrukturIG/>
-      <SubPerbedaanIG/>
+      <SubPerbedaanIG/> */}
     </div>
   );
 };

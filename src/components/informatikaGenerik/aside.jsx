@@ -9,26 +9,16 @@ const Aside = () => {
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pengantar Informatika di SMA
+            Pengantar Informatika
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Informatika di Era Digital
-          </a>
-          <a
-            href=""
-            className="w-full py-1 px-2 hover:bg-gray-100"
-          >
-            Kompetensi Generik dalam Informatika
-          </a>
-          <a
-            href=""
-            className="w-full py-1 px-2 hover:bg-gray-100"
-          >
-            Struktur Materi Informatika
+            Video Pembelajaran
           </a>
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Perbedaan Informatika di SMA dan SMP
+            Latihan Soal
           </a>
+          
+          
         </div>
       </div>
       <div className="w-full border border-blue-950 rounded-lg flex flex-col justify-center items-start py-2">
