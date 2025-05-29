@@ -11,6 +11,10 @@ const Aside = () => {
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Pengantar Dampak Sosial Informatika
           </a>
+          
+          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
+            Infografis Dampak Sosial Informatika
+          </a>
         </div>
       </div>
       <div className="w-full border border-blue-950 rounded-lg flex flex-col justify-center items-start py-2">

@@ -1,6 +1,7 @@
 import React from "react";
 
 import SubPengantarDS from "./subPengantarDS";
+import SubInfografis from "./subInfografis";
 
 
 
@@ -28,7 +29,8 @@ const SectionContent = () => {
         dimanfaatkan secara bijak dan bertanggung jawab dalam kehidupan
         sehari-hari.
       </p>
-      <SubPengantarDS/>
+      <SubPengantarDS />
+      <SubInfografis />
     </div>
   );
 };
