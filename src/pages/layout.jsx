@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <div className="flex flex-col min-h-screen bg-white">
       <Navbar />
 
-      <main className="flex-grow flex flex-col gap-10 px-6 sm:px-10 md:px-14 py-6 mt-16">
+      <main className="flex-grow flex flex-col gap-10 px-8 sm:px-10 md:px-16 lg:px-24 xl:px-28 py-6 mt-16">
         {children}
       </main>
 

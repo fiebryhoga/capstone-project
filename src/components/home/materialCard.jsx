@@ -6,7 +6,7 @@ import materials from "../../data/materials";
 const MaterialCard = memo(({ image, materialName, description, href }) => {
   return (
     <div className="w-full flex flex-col h-auto border border-blue-950 rounded-lg cursor-pointer">
-      <div className="w-full bg-black h-48 xs:h-56 sm:h-64 md:h-72 lg:h-80 xl:h-96 rounded-t-lg relative">
+      <div className="w-full bg-black h-36 xs:h-36 sm:h-44 md:h-58 lg:h-62 rounded-t-lg relative">
         <Image
           className="rounded-t-lg"
           src={image}
@@ -16,7 +16,7 @@ const MaterialCard = memo(({ image, materialName, description, href }) => {
           loading="lazy"
         />
       </div>
-      <div className="w-full bg-blue-950 h-40 xs:h-44 sm:h-48 md:h-52 lg:h-56 xl:h-60 rounded-b-lg flex flex-col justify-between relative">
+      <div className="w-full bg-blue-950 min-h-36 max-h-40 xs:h-44 sm:min-h-48 sm:max-h-52 md:h-52 lg:h-44 xl:h-48 rounded-b-lg flex flex-col justify-between relative">
         <img
           className="absolute w-full h-full rounded-b-lg object-cover"
           src="/assets/images/main/wall-navbar.png"
@@ -26,7 +26,7 @@ const MaterialCard = memo(({ image, materialName, description, href }) => {
           <h3 className="z-10 px-4 pt-3 text-yellow-500 font-semibold text-base sm:text-lg lg:text-xl">
             {materialName}
           </h3>
-          <p className="z-10 px-4 text-xs sm:text-sm md:text-base font-medium text-justify text-blue-950 overflow-hidden text-ellipsis whitespace-pre-line line-clamp-3">
+          <p className="z-10 px-4 text-xs sm:text-xs md:text-base font-medium text-justify text-blue-950 overflow-hidden text-ellipsis whitespace-pre-line line-clamp-3">
             {description}
           </p>
         </div>
@@ -48,7 +48,7 @@ const MaterialList = () => {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-between">
+      <div className="w-full grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 md:gap-10 justify-between">
         {limitedMaterials.map((material) => (
           <MaterialCard key={material.id} {...material} />
         ))}

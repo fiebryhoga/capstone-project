@@ -36,7 +36,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-[180px] sm:h-[280px] md:h-[400px] lg:h-[500px] xl:h-[600px] overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] overflow-hidden rounded-lg shadow-lg">
       <div className="relative w-full h-full">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img

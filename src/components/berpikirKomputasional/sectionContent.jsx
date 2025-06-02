@@ -10,7 +10,7 @@ import SubLatihanBK from "./subLatihanBK";
 
 const SectionContent = () => {
   return (
-    <div className="min-h-64 w-8/10 flex flex-col gap-4">
+    <div className="min-h-64 w-full md:w-8/10 flex flex-col gap-4">
       <h1 className="text-blue-950 text-3xl font-semibold text-center">
         Berpikir Komputasional
       </h1>
@@ -27,15 +27,14 @@ const SectionContent = () => {
         melatih kemampuan berpikir kritis, kreatif, dan analitis dalam menyikapi
         tantangan dan membuat keputusan yang tepat berdasarkan data dan logika.
       </p>
-      <SubPengertianBK/>
-      <SubDecompositionBK/>
-      <SubRecognitionBK/>
-      <SubAbstractionBK/>
-      <SubAlgorithmBK/>
-      <SubEvaluasiBK/>
-      <SubPenerapanBK/>
-      <SubLatihanBK/>
-
+      <SubPengertianBK />
+      <SubDecompositionBK />
+      <SubRecognitionBK />
+      <SubAbstractionBK />
+      <SubAlgorithmBK />
+      <SubEvaluasiBK />
+      <SubPenerapanBK />
+      <SubLatihanBK />
     </div>
   );
 };

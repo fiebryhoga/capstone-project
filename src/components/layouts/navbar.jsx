@@ -9,7 +9,6 @@ const Navbar = () => {
   const navItems = [
     { label: "Beranda", path: "/" },
     { label: "Materi", path: "/material", startsWith: "/materi" },
-    { label: "Sumber", path: "/sumber" },
   ];
 
   const isActive = (item) =>
@@ -25,7 +24,7 @@ const Navbar = () => {
       />
 
       {/* Logo */}
-      <div className="px-4 md:px-16 z-10 flex items-center">
+      <div className="z-10 px-8 sm:px-10 md:px-16 lg:px-24 xl:px-28 flex items-center">
         <img
           className="w-40 sm:w-48"
           src="/assets/images/main/logo3.png"
@@ -34,7 +33,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex flex-row gap-10 lg:gap-16 text-blue-950 z-10 px-4 md:px-16 items-center">
+      <ul className="hidden md:flex flex-row gap-10 lg:gap-16 text-blue-950 z-10 px-8 sm:px-10 md:px-16 lg:px-24 xl:px-28 items-center">
         {navItems.map((item, index) => (
           <li
             key={index}
