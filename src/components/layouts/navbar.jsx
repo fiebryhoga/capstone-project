@@ -1,61 +1,81 @@
-import React from "react";
-import { IoSearchSharp } from "react-icons/io5";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
+
+  const navItems = [
+    { label: "Beranda", path: "/" },
+    { label: "Materi", path: "/material", startsWith: "/materi" },
+    { label: "Sumber", path: "/sumber" },
+  ];
+
+  const isActive = (item) =>
+    router.pathname === item.path ||
+    (item.startsWith && router.pathname.startsWith(item.startsWith));
 
   return (
-    <nav className="fixed z-50 bg-black/30 w-full py-2 h-16 flex flex-row justify-between items-center">
+    <nav className="fixed z-50 bg-black/30 w-full py-2 h-16 flex items-center justify-between">
       <img
         className="absolute w-full h-full object-cover"
         src="/assets/images/main/wall-navbar.png"
         alt=""
       />
 
-      {/* bagian logo */}
-      <div className="px-16 z-10 flex flex-row gap-6 justify-center items-center">
-        <img className="w-52" src="/assets/images/main/logo3.png" alt="logo" />
+      {/* Logo */}
+      <div className="px-4 md:px-16 z-10 flex items-center">
+        <img
+          className="w-40 sm:w-48"
+          src="/assets/images/main/logo3.png"
+          alt="logo"
+        />
       </div>
 
-      {/* nav list menu */}
-      <ul className="flex flex-row gap-16 text-blue-950 z-10 px-16 justify-center items-center">
-        <li
-          className={`${
-            router.pathname === "/"
-              ? "text-yellow-600"
-              : "hover:text-yellow-600"
-          } text-sm font-medium`}
-        >
-          <a href="/">Beranda</a>
-        </li>
-        <li
-          className={`${
-            router.pathname.startsWith("/materi")
-              ? "text-yellow-600"
-              : "hover:text-yellow-600"
-          } text-sm font-medium`}
-        >
-          <a href="/material">Materi</a>
-        </li>
-        <li
-          className={`${
-            router.pathname.startsWith("/sumber")
-              ? "text-yellow-600"
-              : "hover:text-yellow-600"
-          } text-sm font-medium`}
-        >
-          <a href="/sumber">Sumber</a>
-        </li>
-        <li className="w-64 z-20 flex border border-blue-950 rounded-full justify-center items-center py-2 px-4 gap-2">
-          <IoSearchSharp size={20} />
-          <input
-            className="w-full placeholder:text-sm placeholder:text-gray-700 text-blue-950 outline-0 text-sm font-medium"
-            placeholder="cari materi ..."
-            type="text"
-          />
-        </li>
+      {/* Desktop Menu */}
+      <ul className="hidden md:flex flex-row gap-10 lg:gap-16 text-blue-950 z-10 px-4 md:px-16 items-center">
+        {navItems.map((item, index) => (
+          <li
+            key={index}
+            className={`${
+              isActive(item) ? "text-yellow-600" : "hover:text-yellow-600"
+            } text-sm font-medium`}
+          >
+            <a href={item.path}>{item.label}</a>
+          </li>
+        ))}
       </ul>
+
+      {/* Mobile Burger Button */}
+      <div className="md:hidden px-4 z-10">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-blue-950 text-2xl"
+        >
+          {isOpen ? <IoMdClose /> : <IoMdMenu />}
+        </button>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {isOpen && (
+        <div className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md z-40">
+          <ul className="flex flex-col py-4 px-6 gap-4 text-blue-950">
+            {navItems.map((item, index) => (
+              <li
+                key={index}
+                className={`${
+                  isActive(item) ? "text-yellow-600" : "hover:text-yellow-600"
+                } text-sm font-medium`}
+              >
+                <a href={item.path} onClick={() => setIsOpen(false)}>
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

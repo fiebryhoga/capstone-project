@@ -33,11 +33,11 @@ const SectionContent = () => {
       </p>
 
       <SubPengertianAD />
-      <SubTahapanAD />
+      {/* <SubTahapanAD />
       <SubJenisAD />
       <SubTeknikAD />
       <SubPenerapanAD />
-      <SubRumusAD />
+      <SubRumusAD /> */}
       <SubLatihanAD />
     </div>
   );

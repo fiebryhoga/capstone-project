@@ -11,21 +11,7 @@ const Aside = () => {
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Konsep Algoritma
           </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Struktur Dasar Algoritma
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pseudocode dan Flowchart
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Dasar-dasar Pemrograman
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Operasi Dasar & Struktur Kontrol
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Menyusun Program Sederhana
-          </a>
+          
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Latihan / Proyek Mini
           </a>

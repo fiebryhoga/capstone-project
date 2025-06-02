@@ -9,23 +9,9 @@ const Aside = () => {
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pengertian Jaringan Komputer
+            Pengenalan Jaringan Komputer
           </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Manfaat Jaringan Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Jenis-jenis Jaringan Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Topologi Jaringan
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Perangkat Jaringan Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Konektivitas Internet
-          </a>
+          
 
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Latihan

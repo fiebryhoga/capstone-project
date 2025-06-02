@@ -32,11 +32,11 @@ const SectionContent = () => {
       </p>
 
       <SubPengertianSK />
-      <SubKomponenSK />
+      {/* <SubKomponenSK />
       <SubFungsiSK />
       <SubKlasifikasiSK/>
       <SubInteraksiSK/>
-      <SubImplementasiSK/>
+      <SubImplementasiSK/> */}
       <SubLatihanSK />
     </div>
   );

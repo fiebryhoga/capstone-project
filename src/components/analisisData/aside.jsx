@@ -11,21 +11,7 @@ const Aside = () => {
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Pengertian Analisis Data
           </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Tahapan Analisis Data
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Jenis-jenis Data Data
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Teknik Analisis Data
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Penerapan Analisis Data
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Rumus dan Fungsi Dasar
-          </a>
+          
           
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Latihan

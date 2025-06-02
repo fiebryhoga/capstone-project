@@ -12,35 +12,31 @@ const images = [
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 = Next, -1 = Prev
+  const [direction, setDirection] = useState(1);
   const intervalRef = useRef(null);
 
-  // Fungsi untuk berpindah ke slide berikutnya (NEXT)
   const nextSlide = () => {
     setDirection(1);
     setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
-  // Fungsi untuk berpindah ke slide sebelumnya (PREV)
   const prevSlide = () => {
     setDirection(-1);
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  // Auto-slide setiap 5 detik
   useEffect(() => {
     intervalRef.current = setInterval(nextSlide, 5000);
     return () => clearInterval(intervalRef.current);
   }, []);
 
-  // Hentikan auto-slide saat tombol ditekan
   const handleUserInteraction = () => {
     clearInterval(intervalRef.current);
     intervalRef.current = setInterval(nextSlide, 5000);
   };
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden rounded-lg shadow-lg">
+    <div className="relative w-full h-[180px] sm:h-[280px] md:h-[400px] lg:h-[500px] xl:h-[600px] overflow-hidden rounded-lg shadow-lg">
       <div className="relative w-full h-full">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
@@ -57,9 +53,8 @@ const Hero = () => {
         </AnimatePresence>
       </div>
 
-      {/* Tombol Prev & Next */}
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white hover:opacity-50 opacity-40 text-white hover:text-black p-2 rounded-full"
+        className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white hover:opacity-50 opacity-40 text-white hover:text-black p-1 sm:p-2 md:p-3 text-sm sm:text-base md:text-lg rounded-full"
         onClick={() => {
           prevSlide();
           handleUserInteraction();
@@ -68,7 +63,7 @@ const Hero = () => {
         ❮
       </button>
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white hover:opacity-50 opacity-40 text-white hover:text-black p-2 rounded-full"
+        className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-white hover:opacity-50 opacity-40 text-white hover:text-black p-1 sm:p-2 md:p-3 text-sm sm:text-base md:text-lg rounded-full"
         onClick={() => {
           nextSlide();
           handleUserInteraction();

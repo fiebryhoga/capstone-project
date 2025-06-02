@@ -9,23 +9,9 @@ const Aside = () => {
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pengertian Sistem Komputer
+            Mengenal Sistem Komputer
           </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Komponen Sistem Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Fungsi Sistem Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Klasifikasi Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Interaksi Antar Komponen Sistem Komputer
-          </a>
-          <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
-            Contoh Implementasi Sistem Komputer
-          </a>
+          
           <a href="" className="w-full py-1 px-2 hover:bg-gray-100">
             Latihan
           </a>

@@ -33,11 +33,11 @@ const SectionContent = () => {
       </p>
 
       <SubPengertianJK/>
-      <SubManfaatJK/>
+      {/* <SubManfaatJK/>
       <SubJenisJK/>
       <SubTopologiJK/>
       <SubPerangkatJK/>
-      <SubKonektivitasJK/>
+      <SubKonektivitasJK/> */}
       <SubLatihanJK/>
     </div>
   );

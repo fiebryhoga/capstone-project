@@ -1,17 +1,19 @@
-import React from 'react'
-import Navbar from '@/components/layouts/navbar';
-import Footer from '@/components/layouts/footer';
+import React from "react";
+import Navbar from "@/components/layouts/navbar";
+import Footer from "@/components/layouts/footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-[100vh] bg-white">
-      <Navbar></Navbar>
+    <div className="flex flex-col min-h-screen bg-white">
+      <Navbar />
 
-      <main className="flex flex-col gap-10 px-14 py-6 mt-16 min-h-[100vh] mb-10">{children}</main>
+      <main className="flex-grow flex flex-col gap-10 px-6 sm:px-10 md:px-14 py-6 mt-16">
+        {children}
+      </main>
 
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
 
-export default Layout
+export default Layout;

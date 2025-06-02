@@ -16,7 +16,7 @@ const SubPengertianSK = () => {
           }`}
         />
         <h1 className="text-blue-950 font-semibold">
-          Sub Materi: Pengertian Sistem Komputer
+          Mengenal Sistem Komputer
         </h1>
       </div>
 
@@ -48,21 +48,52 @@ const SubPengertianSK = () => {
             </p>
           </div>
 
-          {/* Video Penjelasan */}
+          {/* Canva Presentation Embed */}
           <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
-            <h3 className="font-semibold text-blue-900 mb-2">
-              Penjelasan Video: Apa itu Sistem Komputer?
+            <h3 className="font-semibold text-blue-900 mb-4">
+              Presentasi: Sistem Komputer
             </h3>
-            <div className="w-full aspect-video rounded-lg overflow-hidden">
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                height: 0,
+                paddingTop: "56.25%",
+                paddingBottom: 0,
+                boxShadow: "0 2px 8px 0 rgba(63,69,81,0.16)",
+                marginTop: "1.6em",
+                marginBottom: "0.9em",
+                overflow: "hidden",
+                borderRadius: "8px",
+                willChange: "transform",
+              }}
+            >
               <iframe
-                src="https://www.youtube.com/embed/D05xaBfL9sw"
-                title="Pengertian Sistem Komputer"
-                width="100%"
-                height="100%"
+                loading="lazy"
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  top: 0,
+                  left: 0,
+                  border: "none",
+                  padding: 0,
+                  margin: 0,
+                }}
+                src="https://www.canva.com/design/DAGnV6iW2l0/AmE4LpQ70ybhszkWZM2tmA/view?embed"
                 allowFullScreen
-                className="w-full h-full border border-blue-200 rounded-lg"
+                allow="fullscreen"
+                title="Presentasi Sistem Komputer"
               ></iframe>
             </div>
+            {/* <a
+              href="https://www.canva.com/design/DAGnV6iW2l0/AmE4LpQ70ybhszkWZM2tmA/view?utm_content=DAGnV6iW2l0&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 underline"
+            >
+              Sistem Komputer oleh ALYA ANDINI PRASETYO
+            </a> */}
           </div>
         </div>
       )}

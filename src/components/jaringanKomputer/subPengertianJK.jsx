@@ -16,7 +16,7 @@ const SubPengertianJK = () => {
           }`}
         />
         <h1 className="text-blue-950 font-semibold">
-          Sub Materi: Pengertian Jaringan Komputer
+          Sub Materi: Pengenalan Jaringan Komputer
         </h1>
       </div>
 
@@ -48,12 +48,12 @@ const SubPengertianJK = () => {
 
           <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
             <h3 className="font-semibold text-blue-900 mb-2">
-              Penjelasan Video: Apa itu Jaringan Komputer?
+              Video Penjelasan: Pengantar Informatika
             </h3>
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/GHPMTljp3ZY"
-                title="Pengertian Sistem Komputer"
+                src="https://drive.google.com/file/d/1A2A2Wpu2xbFR_YTgXg91aflvQLnzhoj1/preview"
+                title="Pengantar Informatika di SMA"
                 width="100%"
                 height="100%"
                 allowFullScreen
@@ -61,6 +61,7 @@ const SubPengertianJK = () => {
               ></iframe>
             </div>
           </div>
+          {/* https://drive.google.com/file/d/1A2A2Wpu2xbFR_YTgXg91aflvQLnzhoj1/view?usp=sharing */}
         </div>
       )}
     </div>
