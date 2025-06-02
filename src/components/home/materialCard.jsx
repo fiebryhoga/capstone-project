@@ -6,7 +6,7 @@ import materials from "../../data/materials";
 const MaterialCard = memo(({ image, materialName, description, href }) => {
   return (
     <div className="w-full flex flex-col h-auto border border-blue-950 rounded-lg cursor-pointer">
-      <div className="w-full bg-black h-36 xs:h-36 sm:h-44 md:h-58 lg:h-62 rounded-t-lg relative">
+      <div className="w-full bg-black h-28 xs:h-36 sm:h-44 md:h-58 lg:h-62 rounded-t-lg relative">
         <Image
           className="rounded-t-lg"
           src={image}
@@ -16,14 +16,14 @@ const MaterialCard = memo(({ image, materialName, description, href }) => {
           loading="lazy"
         />
       </div>
-      <div className="w-full bg-blue-950 min-h-36 max-h-40 xs:h-44 sm:min-h-48 sm:max-h-52 md:h-52 lg:h-44 xl:h-48 rounded-b-lg flex flex-col justify-between relative">
+      <div className="w-full bg-blue-950 min-h-32 max-h-36 xs:h-44 sm:min-h-48 sm:max-h-52 md:h-52 lg:h-44 xl:h-48 rounded-b-lg flex flex-col justify-between relative">
         <img
           className="absolute w-full h-full rounded-b-lg object-cover"
           src="/assets/images/main/wall-navbar.png"
           alt=""
         />
         <div className="flex flex-col gap-1">
-          <h3 className="z-10 px-4 pt-3 text-yellow-500 font-semibold text-base sm:text-lg lg:text-xl">
+          <h3 className="z-10 px-4 pt-3 text-yellow-500 font-semibold text-xs sm:text-sm md:text-lg lg:text-xl">
             {materialName}
           </h3>
           <p className="z-10 px-4 text-xs sm:text-xs md:text-base font-medium text-justify text-blue-950 overflow-hidden text-ellipsis whitespace-pre-line line-clamp-3">
