@@ -5,8 +5,9 @@ import Link from "next/link";
 
 const MaterialCard = memo(({ image, materialName, description, href }) => {
   return (
-    <div className="w-full flex flex-col h-auto border border-blue-950 rounded-lg cursor-pointer">
-      <div className="w-full bg-black h-64 rounded-t-lg relative">
+    <div className="w-full flex flex-col h-auto border border-blue-950 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-[1.01] bg-white">
+      {/* Gambar atas */}
+      <div className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 bg-black relative">
         <Image
           className="rounded-t-lg"
           src={image}
@@ -16,25 +17,25 @@ const MaterialCard = memo(({ image, materialName, description, href }) => {
           loading="lazy"
         />
       </div>
-      <div className="w-full bg-blue-950 h-40 rounded-b-lg flex flex-col justify-between relative">
+
+      {/* Konten bawah */}
+      <div className="w-full bg-blue-950 relative flex flex-col justify-between h-44 sm:h-48 md:h-52 lg:h-56 xl:h-60">
         <img
-          className="absolute w-full h-full rounded-b-lg object-cover"
+          className="absolute w-full h-full object-cover rounded-b-lg"
           src="/assets/images/main/wall-navbar.png"
           alt=""
         />
-        <div className="flex flex-col gap-1">
-          <h3 className="z-10 px-4 pt-3 text-yellow-500 font-semibold text-lg">
+        <div className="flex flex-col gap-1 z-10 p-4">
+          <h3 className="text-yellow-500 font-semibold text-lg sm:text-xl">
             {materialName}
           </h3>
-
-          <p className="z-10 px-4 text-xs font-medium text-justify text-blue-950 overflow-hidden text-ellipsis whitespace-pre-line line-clamp-3">
+          <p className="text-xs sm:text-sm font-medium text-blue-950 text-justify line-clamp-3">
             {description}
           </p>
         </div>
-
-        <div className="z-10 px-4 pb-3 w-full flex justify-end mt-2">
+        <div className="z-10 px-4 pb-3 flex justify-end">
           <Link href={href} passHref>
-            <button className="z-10 border border-blue-950 text-blue-950 text-sm font-semibold px-4 py-1 rounded-lg hover:bg-blue-950 hover:text-white transition-all duration-200 cursor-pointer">
+            <button className="border border-blue-950 text-blue-950 text-sm font-semibold px-4 py-1 rounded-lg hover:bg-blue-950 hover:text-white transition duration-200">
               Open
             </button>
           </Link>
@@ -46,8 +47,8 @@ const MaterialCard = memo(({ image, materialName, description, href }) => {
 
 const MaterialList = () => {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div className="w-full px-2 sm:px-4 md:px-6 lg:px-8 xl:px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
         {materials.map((material) => (
           <MaterialCard key={material.id} {...material} />
         ))}
