@@ -61,27 +61,18 @@ const SubPengertianBK = () => {
 
           <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
             <h3 className="font-semibold text-blue-900 mb-2">
-              🎥 Video Penjelasan: Berpikir Komputasional
+              Video Penjelasan: Pengantar Berpikir Komputasional
             </h3>
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.youtube.com/embed/jCb9fpPrxLc?si=19SgFrAdItAv81-d"
-                title="Video Pengertian Berpikir Komputasional"
+                src="https://drive.google.com/file/d/1408LmjASYeqarhq47bK75BrAs67JjWVL/preview"
+                title="Pengantar Informatika di SMA"
                 width="100%"
                 height="100%"
                 allowFullScreen
                 className="w-full h-full border border-blue-200 rounded-lg"
               ></iframe>
             </div>
-          </div>
-
-          <div className="p-4 bg-blue-100 rounded-xl shadow border border-blue-200">
-            <h3 className="font-semibold text-blue-900 mb-2">✨ Fun Fact!</h3>
-            <p>
-              Tahukah kamu? Berpikir komputasional bahkan digunakan dalam dunia
-              desain, musik, kedokteran, dan bisnis lho! Ini adalah bekal
-              penting untuk jadi pemecah masalah handal di abad ke-21. 💡💻🌍
-            </p>
           </div>
         </div>
       )}
