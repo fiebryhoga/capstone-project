@@ -9,7 +9,7 @@ const DampakSosial = () => {
   return (
     <LayoutContent>
       <HeroMaterial />
-      <div className="w-full px-4 sm:px-6 md:px-10 py-2 flex flex-col lg:flex-row gap-6 lg:gap-8">
+      <div className="w-full px-4 sm:px-6 md:px-10 py-2 flex flex-col md:flex-row gap-6 lg:gap-8">
         <Aside />
         <SectionContent />
       </div>

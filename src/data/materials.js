@@ -59,9 +59,16 @@ const materials = [
     id: 8,
     image: "/assets/images/main/material/lintas-bidang.png",
     materialName: "Praktik Lintas Bidang Informatika",
-    description:
-      "bla bla bla bla ..",
+    description: "bla bla bla bla ..",
     href: "/lintasBidang",
+  },
+  {
+    id: 9,
+    image: "/assets/images/main/material/material7.png",
+    materialName: "Berpikir Komputasional",
+    description:
+      "Kembangkan kemampuan berpikir logis dan sistematis dalam memecahkan masalah menggunakan pendekatan komputasional. Materi ini sangat penting dalam pengembangan solusi berbasis teknologi.",
+    href: "/berpikirKomputasional",
   },
 
   // {
@@ -90,14 +97,6 @@ const materials = [
   // },
   // {
 
-  // {
-  //   id: 6,
-  //   image: "/assets/images/main/material/material7.png",
-  //   materialName: "Berpikir Komputasional",
-  //   description:
-  //     "Kembangkan kemampuan berpikir logis dan sistematis dalam memecahkan masalah menggunakan pendekatan komputasional. Materi ini sangat penting dalam pengembangan solusi berbasis teknologi.",
-  //   href: "/berpikirKomputasional",
-  // },
   // {
   //   id: 7,
   //   image: "/assets/images/main/material/material2.png",

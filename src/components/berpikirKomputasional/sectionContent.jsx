@@ -28,12 +28,12 @@ const SectionContent = () => {
         tantangan dan membuat keputusan yang tepat berdasarkan data dan logika.
       </p>
       <SubPengertianBK />
-      <SubDecompositionBK />
+      {/* <SubDecompositionBK />
       <SubRecognitionBK />
       <SubAbstractionBK />
       <SubAlgorithmBK />
       <SubEvaluasiBK />
-      <SubPenerapanBK />
+      <SubPenerapanBK /> */}
       <SubLatihanBK />
     </div>
   );

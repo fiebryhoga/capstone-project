@@ -2,7 +2,7 @@ import React from "react";
 
 const Aside = () => {
   return (
-    <div className="hidden min-h-64 w-full md:w-8/10 md:flex flex-col gap-4">
+    <div className="hidden min-h-64 w-full md:w-2/10 md:flex flex-col gap-4">
       {/* Submateri Berpikir Komputasional */}
       <div className="w-full border border-blue-950 rounded-lg flex flex-col justify-center items-start py-2">
         <h1 className="text-base text-center font-semibold pb-1 border-b border-b-blue-950 w-full mb-4">
@@ -10,29 +10,9 @@ const Aside = () => {
         </h1>
         <div className="flex flex-col text-sm font-medium w-full">
           <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pengertian Berpikir Komputasional
+            Mengenal Berpikir Komputasional
           </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Decomposition (Memecah Masalah)
-          </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Pattern Recognition (Pengenalan Pola)
-          </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Abstraction (Abstraksi)
-          </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Algorithm Design (Perancangan Algoritma)
-          </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Evaluasi & Debugging
-          </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Penerapan di Dunia Nyata
-          </a>
-          <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
-            Latihan & Kuis
-          </a>
+          
         </div>
       </div>
 
