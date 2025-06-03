@@ -59,7 +59,7 @@ const materials = [
     id: 8,
     image: "/assets/images/main/material/lintas-bidang.png",
     materialName: "Praktik Lintas Bidang Informatika",
-    description: "bla bla bla bla ..",
+    description: "Disini kamu akan belajar mengenai praktik atau pekerjaan dan kegiatan apa saja yang berada di lintas bidang informatika",
     href: "/lintasBidang",
   },
   {
