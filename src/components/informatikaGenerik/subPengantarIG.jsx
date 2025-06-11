@@ -57,7 +57,7 @@ const SubPengantarIG = () => {
               <li>
                 <strong>
                   Berpikir Komputasional (Computational Thinking):
-                </strong>{" "}
+                </strong>
                 Merupakan kemampuan menyusun solusi masalah secara sistematis
                 menggunakan konsep seperti dekomposisi, pola, abstraksi, dan
                 algoritma. Kemampuan ini bermanfaat luas, tidak hanya dalam

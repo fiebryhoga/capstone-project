@@ -12,7 +12,6 @@ const Aside = () => {
           <a href="#" className="w-full py-1 px-2 hover:bg-gray-100">
             Mengenal Berpikir Komputasional
           </a>
-          
         </div>
       </div>
 

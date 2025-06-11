@@ -71,7 +71,7 @@ const Aside = () => {
           >
             Kemendikbud – Dampak Positif dan Negatif TIK bagi Pelajar
           </a>
-        </div> 
+        </div>
       </div>
     </div>
   );
