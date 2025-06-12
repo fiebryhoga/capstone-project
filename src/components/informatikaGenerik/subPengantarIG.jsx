@@ -69,7 +69,7 @@ const SubPengantarIG = () => {
 
           <div className="p-4 bg-white rounded-xl shadow border border-blue-100">
             <h3 className="font-semibold text-blue-900 mb-2">
-              Video Penjelasan: Pengantar Informatika
+              Video Penjelasan: Informatika dan Keterampilan Generik
             </h3>
             <div className="w-full aspect-video rounded-lg overflow-hidden">
               <iframe
