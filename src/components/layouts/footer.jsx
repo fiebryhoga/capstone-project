@@ -71,7 +71,10 @@ const Footer = () => {
             { label: "Tentang Kami", href: "/tentang-kami" },
             { label: "Kontak", href: "/kontak" },
             { label: "Materi Pembelajaran", href: "/materi" },
-            { label: "Panduan Penggunaan", href: "/panduan" },
+            {
+              label: "Panduan Penggunaan",
+              href: "https://drive.google.com/file/d/1PKp9j-waRspvsipmqHC74xNnUSA4zgMP/preview",
+            },
           ].map((item) => (
             <p
               key={item.href}

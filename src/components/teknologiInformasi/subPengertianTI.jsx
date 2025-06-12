@@ -32,14 +32,12 @@ const SubPengertianTI = () => {
             lupa klik ikon-ikon yang ada ya, karena semuanya interaktif dan bisa
             memberi kamu informasi penting. Yuk kita mulai! 🚀
           </p>
-
           <embed
             src="/assets/documents/BAB9.pdf"
             type="application/pdf"
             className="w-2/3 h-[1680px] rounded-lg shadow"
             title="Infografis Pengertian TIK"
           />
-
           {/* <div className="w-full">
             <iframe
               className="h-[1680px] w-[850px] rounded-lg shadow"
@@ -48,9 +46,8 @@ const SubPengertianTI = () => {
               allow="autoplay"
             ></iframe>
           </div> */}
-
+          {/* https://drive.google.com/file/d/1PKp9j-waRspvsipmqHC74xNnUSA4zgMP/preview */}
           {/* https://drive.google.com/file/d/1fyMY6BNePCGZVRNCEwPn9f_S6fRaA-ga/view?usp=sharing */}
-
           <p>
             Nah, sekarang kamu sudah memahami dasar dari Teknologi Informasi dan
             Komunikasi, kan? 💡 Dengan memahami pengertian ini, kamu akan lebih
