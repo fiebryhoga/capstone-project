@@ -33,12 +33,23 @@ const SubPengertianTI = () => {
             memberi kamu informasi penting. Yuk kita mulai! 🚀
           </p>
 
-          <embed
+          {/* <embed
             src="/assets/documents/BAB9.pdf"
             type="application/pdf"
             className="w-2/3 h-[1680px] rounded-lg shadow"
             title="Infografis Pengertian TIK"
-          />
+          /> */}
+
+          <div className="w-full">
+            <iframe
+              className="h-[500px] w-[850px] rounded-lg shadow"
+              src="https://drive.google.com/file/d/1fyMY6BNePCGZVRNCEwPn9f_S6fRaA-ga/preview"
+              title="Tutorial Penggunaan AR"
+              allow="autoplay"
+            ></iframe>
+          </div>
+
+          {/* https://drive.google.com/file/d/1fyMY6BNePCGZVRNCEwPn9f_S6fRaA-ga/view?usp=sharing */}
 
           <p>
             Nah, sekarang kamu sudah memahami dasar dari Teknologi Informasi dan
