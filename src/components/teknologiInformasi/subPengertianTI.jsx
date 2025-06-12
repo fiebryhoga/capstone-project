@@ -33,12 +33,12 @@ const SubPengertianTI = () => {
             memberi kamu informasi penting. Yuk kita mulai! 🚀
           </p>
 
-          <embed
-            src="/assets/documents/BAB9.pdf"
-            type="application/pdf"
+          <img
+            src="/assets/documents/BAB9.png"
             className="w-2/3 h-[1680px] rounded-lg shadow"
-            title="Infografis Pengertian TIK"
+            
           />
+
 
           {/* <div className="w-full">
             <iframe
