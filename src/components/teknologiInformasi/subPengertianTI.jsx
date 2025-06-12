@@ -33,21 +33,21 @@ const SubPengertianTI = () => {
             memberi kamu informasi penting. Yuk kita mulai! 🚀
           </p>
 
-          <embed
+          {/* <embed
             src="/assets/documents/BAB9.png"
             type="application/pdf"
             className="w-2/3 h-[1680px] rounded-lg shadow"
             title="Infografis Pengertian TIK"
-          />
+          /> */}
 
-          {/* <div className="w-full">
+          <div className="w-full">
             <iframe
               className="h-[1680px] w-[850px] rounded-lg shadow"
               src="https://drive.google.com/file/d/1fyMY6BNePCGZVRNCEwPn9f_S6fRaA-ga/preview"
               title="Konsep TIK"
               allow="autoplay"
             ></iframe>
-          </div> */}
+          </div>
 
           {/* https://drive.google.com/file/d/1fyMY6BNePCGZVRNCEwPn9f_S6fRaA-ga/view?usp=sharing */}
 
