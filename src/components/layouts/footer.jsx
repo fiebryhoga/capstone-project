@@ -68,9 +68,12 @@ const Footer = () => {
         <div>
           <h2 className="text-blue-950 text-lg font-bold mb-4">Tautan Cepat</h2>
           {[
-            { label: "Tentang Kami", href: "/tentang-kami" },
-            { label: "Kontak", href: "/kontak" },
-            { label: "Materi Pembelajaran", href: "/materi" },
+            { label: "Tentang Kami", href: "http://smagota.sch.id" },
+            {
+              label: "Kontak",
+              href: "mailto:sman1gondangtulungagung@gmail.com?subject=Pertanyaan%20Informasi",
+            },
+            { label: "Materi Pembelajaran", href: "/material" },
             {
               label: "Panduan Penggunaan",
               href: "https://drive.google.com/file/d/1PKp9j-waRspvsipmqHC74xNnUSA4zgMP/preview",
