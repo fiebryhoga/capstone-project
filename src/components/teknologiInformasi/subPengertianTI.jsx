@@ -34,7 +34,7 @@ const SubPengertianTI = () => {
           </p>
 
           <embed
-            src="/assets/documents/poster-3.pdf"
+            src="/assets/documents/BAB9.pdf"
             type="application/pdf"
             className="w-2/3 h-[1680px] rounded-lg shadow"
             title="Infografis Pengertian TIK"
