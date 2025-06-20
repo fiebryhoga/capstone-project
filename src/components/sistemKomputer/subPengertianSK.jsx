@@ -80,8 +80,8 @@ const SubPengertianSK = () => {
                   padding: 0,
                   margin: 0,
                 }}
-                src="https://www.canva.com/design/DAGnV6iW2l0/AmE4LpQ70ybhszkWZM2tmA/view?embed"
-                allowFullScreen
+                src="https://www.canva.com/design/DAGq3iLL8ro/3areiJ_E-htRpH_A_cm2Bg/view?embed"
+                https:allowFullScreen
                 allow="fullscreen"
                 title="Presentasi Sistem Komputer"
               ></iframe>
