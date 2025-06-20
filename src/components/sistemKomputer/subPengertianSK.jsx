@@ -81,7 +81,7 @@ const SubPengertianSK = () => {
                   margin: 0,
                 }}
                 src="https://www.canva.com/design/DAGq3iLL8ro/3areiJ_E-htRpH_A_cm2Bg/view?embed"
-                https:allowFullScreen
+                allowFullScreen // Ini perbaikannya
                 allow="fullscreen"
                 title="Presentasi Sistem Komputer"
               ></iframe>
